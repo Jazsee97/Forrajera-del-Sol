@@ -1,0 +1,317 @@
+<html>
+ <head>
+   <meta charset="UTF-B"/> 
+   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Forrajera del Sol</title>
+    <link rel="icon" type="image/png" href="Imagenes\L.png" sizes="100x100"/>
+    <link rel="stylesheet" href="Estilos\Estilo.css">
+     <link rel="stylesheet" href="Estilos\Tabla.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="Estilos\Galeria.css">
+  <link rel="stylesheet" href="Estilos\Redes.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+ 
+  </head>
+
+<body>
+   <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+       <i class="fas fa-bars"></i>
+      </label>
+      <a href="" class="enlace">
+      <img src="Imagenes\F.png" alt="" class="logo">
+     </a>    
+     <ul>
+            
+            <li><a href="Contenido\que es.html">Que es una forrajera?</a></li>
+            <li><a href="Contenido\Tipos.html">Métodos forrajeros</a></li>
+            <li><a href="Contenido\Ventajas.html">Beneficios</a></li>
+            <li><a href="Contenido\Aporte.html">Aportación nutrimental</a></li>
+            <li><a href="Contenido\Tienda.html">Productos</a></li>
+        </ul>
+    </nav>
+<section>
+<div class="slider-frame">
+        <ul>
+            <li><img src="Imagenes\ovejas.jpg" alt=""></li>
+            <li><img src="Imagenes\perron.jpg" alt=""></li>
+            <li><img src="Imagenes\proplan.jpg" alt=""></li>
+            <li><img src="Imagenes\caballo.jpg" alt=""></li>
+            
+        </ul>
+    </div>
+
+
+
+<br>
+<br>
+<br>
+<br>
+   <h1 style="padding-left: 80px;">Distribuidores de</h1>
+   <br>
+   <br>
+   <table id="1" style="margin: 10px auto; background-color: white; width: 1200px; height: 200px;">
+      <tr>
+      <td><img src="Imagenes/1.avif" width="80" height="80" alt="" style=" margin-left: 80px;" ></td>
+      <td><img src="Imagenes/2.avif" width="34" height="80.38"alt=""style=" margin-left: 90px;"></td>
+      <td><img src="Imagenes/3.avif" width="82.104" height="34.46"alt="" style=" margin-left: 80px;"></td>
+      <td><img src="Imagenes/4.avif" width="113.34" height="46.22"alt="" style=" margin-left: 80px;"></td>
+      <td><img src="Imagenes/5.avif" width="80" height="80"alt="" style=" margin-left: 80px;"></td>
+      </tr>
+      <tr>
+      <td><img src="Imagenes/6.avif" width="80" height="80"alt=""style=" margin-left: 80px;"></td>
+      <td><img src="Imagenes/7.avif" width="80" height="80"alt="" style=" margin-left: 80px;"></td>
+      <td><img src="Imagenes/8.avif" width="80" height="80"alt="" style=" margin-left: 80px;"></td>
+      <td><img src="Imagenes/9.avif" width="80" height="80"alt="" style=" margin-left: 80px;"></td>
+      <td><img src="Imagenes/10.png" width="102" height="79.50" alt="" style=" margin-left: 80px;"></td>
+      </tr>
+   </table>
+	
+	
+	<br>
+	<br>
+	<h1 style="padding-left: 80px;">Menú por especie </h1>
+	<br>
+	<br>
+
+<script type="text/javascript">
+//Ancho (en pixeles)
+var sliderwidth="1200px"
+//Alto
+var sliderheight="200px"
+//Velocidad 1-10
+var slidespeed=1
+//Color de fondo:
+slidebgcolor="#E7D3AF"
+
+//Vínculos y enlaces de las imágenes
+var leftrightslide=new Array()
+var finalslide=''
+leftrightslide[0]='<a href="https://forrajeraenlinea.com/collections/mascotas" target="blank" title="Perros" ><img border="0" src="https://static.fundacion-affinity.org/cdn/farfuture/PVbbIC-0M9y4fPbbCsdvAD8bcjjtbFc0NSP3lRwlWcE/mtime:1643275542/sites/default/files/los-10-sonidos-principales-del-perro.jpg" height="200"></a>'
+leftrightslide[1]='<a href="https://forrajeraenlinea.com/collections/gatos" target="blank" title="Gatos"><img border="0" src="https://as01.epimg.net/diarioas/imagenes/2022/04/20/actualidad/1650466413_240889_1650466661_noticia_normal_recorte1.jpg" height="200"></a>'
+leftrightslide[2]='<a href="https://forrajeraenlinea.com/collections/caballos" target="blank" title="Caballos"><img border="0" src="https://www.petalatino.com/wp-content/uploads/iStock-545286922_Maxileon.jpeg" height="200"></a>'
+leftrightslide[3]='<a href="https://forrajeraenlinea.com/collections/ave" target="blank" title="Aves"><img border="0" src="https://faada.org/fotos/pub_1361.jpg" height="200"></a>'
+leftrightslide[4]='<a href="https://forrajeraenlinea.com/collections/bovino" target="blank" title="Bovinos"><img border="0" src="https://bmeditores.mx/wp-content/uploads/2020/08/aborto-bovinos-1068x534.jpg" height="200"></a>'
+
+
+var imagegap=""
+var slideshowgap=5
+
+
+var copyspeed=slidespeed
+leftrightslide='<nobr>'+leftrightslide.join(imagegap)+'</nobr>'
+var iedom=document.all||document.getElementById
+if (iedom)
+document.write('<span id="temp" style="visibility:hidden;position:absolute;top:-100px;left:-1000px">'+leftrightslide+'</span>')
+var actualwidth=''
+var cross_slide, ns_slide
+
+function fillup(){
+if (iedom){
+cross_slide=document.getElementById? document.getElementById("test2") : document.all.test2
+cross_slide2=document.getElementById? document.getElementById("test3") : document.all.test3
+cross_slide.innerHTML=cross_slide2.innerHTML=leftrightslide
+actualwidth=document.all? cross_slide.offsetWidth : document.getElementById("temp").offsetWidth
+cross_slide2.style.left=actualwidth+slideshowgap+"px"
+}
+else if (document.layers){
+ns_slide=document.ns_slidemenu.document.ns_slidemenu2
+ns_slide2=document.ns_slidemenu.document.ns_slidemenu3
+ns_slide.document.write(leftrightslide)
+ns_slide.document.close()
+actualwidth=ns_slide.document.width
+ns_slide2.left=actualwidth+slideshowgap
+ns_slide2.document.write(leftrightslide)
+ns_slide2.document.close()
+}
+lefttime=setInterval("slideleft()",30)
+}
+window.onload=fillup
+
+function slideleft(){
+if (iedom){
+if (parseInt(cross_slide.style.left)>(actualwidth*(-1)+8))
+cross_slide.style.left=parseInt(cross_slide.style.left)-copyspeed+"px"
+else
+cross_slide.style.left=parseInt(cross_slide2.style.left)+actualwidth+slideshowgap+"px"
+
+if (parseInt(cross_slide2.style.left)>(actualwidth*(-1)+8))
+cross_slide2.style.left=parseInt(cross_slide2.style.left)-copyspeed+"px"
+else
+cross_slide2.style.left=parseInt(cross_slide.style.left)+actualwidth+slideshowgap+"px"
+
+}
+else if (document.layers){
+if (ns_slide.left>(actualwidth*(-1)+8))
+ns_slide.left-=copyspeed
+else
+ns_slide.left=ns_slide2.left+actualwidth+slideshowgap
+
+if (ns_slide2.left>(actualwidth*(-1)+8))
+ns_slide2.left-=copyspeed
+else
+ns_slide2.left=ns_slide.left+actualwidth+slideshowgap
+}
+}
+
+
+if (iedom||document.layers){
+with (document){
+document.write('<table border="0" cellspacing="0" cellpadding="0"><td>')
+if (iedom){
+write('<div style="position:relative;width:'+sliderwidth+';height:'+sliderheight+';overflow:hidden">')
+write('<div style="position:absolute;width:'+sliderwidth+';height:'+sliderheight+';background-color:'+slidebgcolor+'" onmouseover="copyspeed=0" onmouseout="copyspeed=slidespeed">')
+write('<div id="test2" style="position:absolute;left:0px;top:0px"></div>')
+write('<div id="test3" style="position:absolute;left:-1000px;top:0px"></div>')
+write('</div></div>')
+}
+else if (document.layers){
+write('<ilayer width="+sliderwidth+" height="+sliderheight+" name="ns_slidemenu" bgcolor="+slidebgcolor+">')
+write('<layer left="0" top="0" onmouseover="copyspeed=0" onmouseout="copyspeed=slidespeed" name="ns_slidemenu2"></layer>')
+write('<layer left="0" top="0" onmouseover="copyspeed=0" onmouseout="copyspeed=slidespeed" name="ns_slidemenu3"></layer>')
+write('</ilayer>')
+}
+document.write('</td></table>')
+}
+}
+
+</script> 
+<br>
+<br>
+<h2 style="padding-left: 80px;">Producto destacado</h2>
+<br>
+
+   
+<table>
+<tr>
+<td>
+<img src="Imagenes/Producto.webp" width="500" height="700" alt="Equino 14 Plus (40Kg)" align="middle" style="margin-left: 30px; margin-right: 30px;">
+<br>
+<br><br><br><br><br><br><br><br>
+<p style="font-size:30px; padding-left: 80px; padding-right: 80px;font: sans-serif;text-align: center; line-height: 150%; ">
+A un súper precio de:
+<p style="font-size:40px; padding-left: 80px; padding-right: 80px;font: sans-serif;text-align: center; line-height: 150%; color: red;">
+440 pesos Mx.
+</p>
+</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br><br><br>
+</td>
+<td>
+<br><br>
+<h1 style="text-align: center; font-size: 40px; font:oblique bold 250% cursive;">Equino 14% Plus (40Kg)</h1><br>
+<p style="font-size:20px; padding-left: 80px; padding-right: 80px;font: sans-serif;text-align: justify; line-height: 150%; color: black;">
+<a href="https://www.facebook.com/Agromasmx/?locale=es_LA" >AGROMAS</a><br>
+</p>
+<hr size="5" style="background-color:black; width: 75%; margin-left: 80px;">
+<br>
+<p style="font-size:20px; padding-left: 80px; padding-right: 80px;font: sans-serif;text-align: justify; line-height: 150%">
+<b>Presentación:</b> 40 KG.
+<br>
+Alimento concentrado con grano rolado para caballos, yeguas y potros. 
+<br>
+<br>
+<b>Análisis garantizado: </b>
+</p>
+<br>
+<ul style="padding-left: 90px; padding-right: 120px; font-size: 20px; text-align: justify;">
+ <li>Proteína cruda 14% Mín. </li>
+ <li>Grasa cruda 4.0% Mín.</li>
+ <li>Fibra cruda 10.0% Máx. </li>
+<li>Cenizas 6% Máx. </li>
+<li>Humedad 12% Máx. </li>
+<li>E.L.N. 54%</li>
+</ul>
+<br>
+<br>
+<p style="font-size:20px; padding-left: 80px; padding-right: 80px;font: sans-serif;text-align: justify; line-height: 150%">
+<b>Indicaciones de uso: </b>
+<br>
+Alimento balanceado para caballos de Alto Rendimiento, elaborado con ingredientes de alta digestibilidad 
+y palatabilidad que asegura el aporte de nutrientes esenciales (energía, proteínas, vitaminas, macro y micro minerales). 
+Para lograr una excelente condición corporal y desempeño.
+<br>
+<br>
+<b>Dosis y vía de administración: </b>
+<br>
+<br>
+<hr size="5" style="background-color:black; width: 75%; margin-left: 80px;">
+<p style="font-size:20px; padding-left: 80px; padding-right: 80px;font: sans-serif;text-align: justify; line-height: 150%">
+<b> Animales adultos:</b> 1.0 kg de Lykus 16% PEL ROL por cada 100 kg de peso.
+</p>
+
+<hr size="5" style="background-color:black; width: 75%; margin-left: 80px;">
+<p style="font-size:20px; padding-left: 80px; padding-right: 80px;font: sans-serif;text-align: justify; line-height: 150%">
+<b>Potrillos:</b>	1.5 kg de Lykus 16% PEL ROL por cada 100kg de peso.
+</p>
+
+<hr size="5" style="background-color:black; width: 75%; margin-left: 80px;">
+<p style="font-size:20px; padding-left: 80px; padding-right: 80px;font: sans-serif;text-align: justify; line-height: 150%">
+<b>Yeguas en lactancia:</b>	1.5 kg de Lykus 16% PEL ROL por cada 100kg de peso.
+</p>
+<hr size="5" style="background-color:black; width: 75%; margin-left: 80px;">
+<br>
+<br>
+<p style="font-size:20px; padding-left: 80px; padding-right: 80px;font: sans-serif;text-align: justify; line-height: 150%">
+Suministrar este alimento en 2 servidas al día. 
+Ofrecer como complemento forraje de buena calidad y agua limpia. 
+Administrarse vía oral. 
+</p>
+<br>
+<br>
+</td>
+</tr>
+</table>
+  <br>
+  <br> 
+ <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="Imagenes\F.png" alt="Logo Forrajera del Sol">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p style="text-align: justify;">Entregamos satisfacción para un ganado de calidad...</p>
+                <p style="text-align: justify;">Somos una empresa dedicada a la industria de alimentos para la industria agropecuaria, nos dedicamos a atender todo el mercado regional, 
+                contamos con una gran variedad de productos donde una parte de ellos los elaboramos nosotros mismos y otra la comercializamos.</p>
+                
+            </div>
+            <div class="box">
+                <h2>FORRAJERA EN LINEA</h2>
+                <p>Búsqueda</p>
+                <p>Política de privacidad</p>
+                <p>Términos de servicio</p>
+                <p>Política de cancelación y reembolso</p>
+                <p>Política de envió</p>
+                
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/ForrajeraEnLinea" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/rancho_los_primos/" class="fa fa-instagram"></a>
+                    <a href="https://twitter.com/campero_hidalgo" class="fa fa-twitter"></a>
+                    <a href="https://www.youtube.com/@agrotvcomar/about" class="fa fa-youtube"></a>
+                    <a href="https://api.whatsapp.com/send?phone=+525533667521&text=Hola,%20t
+                    e%20asesoraramos%20por%20WhatsApp%20gestiona%20tu%20compra%20por%20este%20canal." class="fa fa-whatsapp"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>Forrajera Del Sol</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>  
+</section>
+
+
+</body>
+</html>

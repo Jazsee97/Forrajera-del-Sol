@@ -1,0 +1,13 @@
+table{
+margin: 0 auto;
+background-color: white;
+width: 1200px;
+height: 200px;
+}
+table,
+th,
+td{
+border: 1px solid #E7D3AF;
+border-collapse: collapse;
+text-align: ;
+}
